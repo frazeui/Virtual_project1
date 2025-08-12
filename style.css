@@ -1,0 +1,240 @@
+/* style.css*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color:#f8f9fa;
+    color: #333;
+    line-height: 1.5;
+
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.header {
+    background: #fff;
+padding: 15px 0;
+border-bottom:1px solid #e0e0e0;
+
+}
+.header h1{
+    font-size: 1.8rem;
+    color: #007bff;
+}
+.navbar ul{
+    display:flex;
+    gap:15px;
+    list-style: none;
+    padding:10px 0;
+}
+.navbar a{
+    text-decoration: none;
+    color:#333;
+    font-weight:bold;
+}
+.navbar a:hover{
+    color:#007bff;
+}
+
+.btn{
+    padding:8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.btn-primary{
+    background:#007bff;
+    color:white;
+
+}
+.btn-primary:hover{
+    background:#0056b3;
+
+}
+.btn-secondary{
+    background:#e9ecef;
+    color:#333;
+    border: 1px solid #ced4da;
+
+}
+.btn-secondary:hover{
+    background:dee2e6;
+}
+.btn-large{
+    padding: 10px 20px;
+    font-size:1.1rem;
+}
+.btn-full{
+    width:100%;
+}
+
+.hero{
+    text-align: center;
+    padding:50px 0;
+}
+.hero h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+.hero p{
+    font-size:1.1rem;
+    color:#666;
+    margin-bottom: 20px;
+}
+.cta-buttons{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.features{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding:30px 0;
+
+}
+.feature{
+    flex: 1;
+    min-width: 200px;
+    background:#fff;
+    padding:15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+.feature h3{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+
+.feature p{
+    color: #666;
+}
+.auth-form, .task-form{
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.auth-form h2, .task-form h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.form-group{
+    margin-bottom: 15px;
+
+}
+.form-group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select, .form-group textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba( 0, 123,255,0.3);
+}
+.form-row{
+    display: flex;
+    gap: 15px;
+
+}
+.form-row .form-group{
+    flex:1;
+
+}
+.auth-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.auth-link a{
+    color: #007bff;
+    text-decoration: none;
+}
+.auth-link a:hover{
+    text-decoration: underline;
+}
+.tasks-section{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.tasks-section h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+#tasksContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a[href="index.html"]{
+    color: #007bff;
+    text-decoration: none;
+}
+a[href="index.html"]:hover{
+    text-decoration: underline;
+}
+
+.dashboard{
+    padding:  20px 0;
+    
+}
+#userInfo{
+    margin-right: 10px;
+}
+#logoutBtn{
+    padding: 8px 16px;
+}
+
+@media(max-width: 600px){
+    .feature{
+        min-width: 100%;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    .cta-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h2{
+        font-size: 1.5rem;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+
+
+
+
+  
