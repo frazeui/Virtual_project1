@@ -1,4 +1,4 @@
-// Main Js file for homapage
+// Main File 
 
 document.addEventListener('DOMContentLoaded', function() {
 
