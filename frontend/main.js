@@ -1,4 +1,4 @@
-// Main File 
+// Main Js file 
 
 document.addEventListener('DOMContentLoaded', function() {
 
